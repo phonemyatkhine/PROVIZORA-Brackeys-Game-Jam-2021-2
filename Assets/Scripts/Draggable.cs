@@ -5,10 +5,11 @@ using UnityEngine;
 public class Draggable : MonoBehaviour
 {
 
+
     public delegate void DragEndedDelegate(Draggable draggableObject);
 
     public DragEndedDelegate dragEndedCallback;
-
+  
 
     private bool isDragged = false;
     private Vector3 mouseDragStartPosition;

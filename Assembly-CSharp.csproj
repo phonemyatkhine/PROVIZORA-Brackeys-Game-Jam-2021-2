@@ -47,30 +47,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\PowerSet.cs" />
-     <Compile Include="Assets\DragAndDrop\Scripts\Draggable.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\Shop\Scripts\Item.cs" />
-     <Compile Include="Assets\DragAndDrop\Scripts\ObjectContainerList.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\CharmUI.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\CharmsArrayUI.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\PowersUI.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\Shop\Scripts\ItemUI.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\EquipScreen.cs" />
-     <Compile Include="Assets\DragAndDrop\Scripts\ToolTips\Tooltip.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\Power.cs" />
-     <Compile Include="Assets\DragAndDrop\Scripts\ObjectContainerArray.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\PowerUI.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\Charm.cs" />
-     <Compile Include="Assets\DragAndDrop\Scripts\ToolTips\IToolTip.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\PowerSetUI.cs" />
-     <Compile Include="Assets\DragAndDrop\Scripts\ObjectContainer.cs" />
-     <Compile Include="Assets\DragAndDrop\Scripts\Slot.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\Shop\Scripts\Inventory.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\Player.cs" />
-     <Compile Include="Assets\DragAndDrop\Scripts\ToolTips\ToolTipSimple.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\ExampleScripts\PowerSetSlot.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\Shop\Scripts\CoinUI.cs" />
-     <Compile Include="Assets\DragAndDrop\Examples\Shop\Scripts\InventoryUI.cs" />
+     <Compile Include="Assets\Scripts\Draggable.cs" />
+     <Compile Include="Assets\Scripts\SnapController.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Editor/2020.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

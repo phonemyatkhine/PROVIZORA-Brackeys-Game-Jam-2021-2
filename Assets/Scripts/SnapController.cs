@@ -10,24 +10,21 @@ public class SnapController : MonoBehaviour
     public float snapRange = 0.5f;
 
 
-
-
     // Start is called before the first frame update
     void Start()
     {
-      
         foreach(Draggable draggable in draggableObjects)
         {
             draggable.dragEndedCallback = OnDragEnded;
         }
-
     }
 
+    // Update is called once per frame
     private void OnDragEnded(Draggable draggable)
     {
+
         float closestDistance = -1;
         Transform closestSnapPoint = null;
-        
 
         foreach(Transform snapPoint in snapPoints)
         {
@@ -36,7 +33,6 @@ public class SnapController : MonoBehaviour
             {
                 closestSnapPoint = snapPoint;
                 closestDistance = currentDistance;
-
             }
         }
 
