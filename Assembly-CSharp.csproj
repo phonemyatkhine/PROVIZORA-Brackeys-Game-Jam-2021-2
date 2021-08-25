@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\DisplayText.cs" />
      <Compile Include="Assets\Scripts\Draggable.cs" />
      <Compile Include="Assets\Scripts\SnapController.cs" />
+     <Compile Include="Assets\Scripts\LayerLetter.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Editor/2020.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
