@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/gameplay_scene_with_spawns.unity
+=======
+- path: Assets/Scenes/gameplay_test.unity
+>>>>>>> 7fc72f4abfb6cdbb78edebf781fdd777f78a7fec
   isLoaded: 1
   isActive: 1
   isSubScene: 0
