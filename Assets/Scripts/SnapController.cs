@@ -7,6 +7,7 @@ public class SnapController : MonoBehaviour
 
     public List<Transform> snapPoints;
     public List<Draggable> draggableObjects;
+    public LayerMask draggable_layer;
     public float snapRange = 0.5f;
 
 

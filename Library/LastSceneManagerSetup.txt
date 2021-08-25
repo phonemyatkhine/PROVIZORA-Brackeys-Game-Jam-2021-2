@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/nameinput_test.unity
+- path: Assets/Scenes/gameplay_scene_with_spawns.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
