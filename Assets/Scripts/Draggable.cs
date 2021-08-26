@@ -89,6 +89,35 @@ public class Draggable : MonoBehaviour
         }
     }
 
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "LetterSnap1")
+        {
+            Debug.Log("the drag item has left drop place 1");
+            inCorrectPlace1 = false;
+        }
+        if (other.gameObject.name == "LetterSnap2")
+        {
+            Debug.Log("the drag item has left drop place 2");
+            inCorrectPlace2 = false;
+        }
+        if (other.gameObject.name == "LetterSnap3")
+        {
+            Debug.Log("the drag item has left drop place 3");
+            inCorrectPlace3 = false;
+        }
+        if (other.gameObject.name == "LetterSnap4")
+        {
+            Debug.Log("the drag item has left drop place 4");
+            inCorrectPlace4 = false;
+        }
+        if (other.gameObject.name == "LetterSnap5")
+        {
+            Debug.Log("the drag item has left drop place 5");
+            inCorrectPlace5 = false;
+        }
+    }
+
 
 
     void OnMouseUp()

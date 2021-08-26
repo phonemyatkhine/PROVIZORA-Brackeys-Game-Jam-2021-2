@@ -89,6 +89,35 @@ public class DraggableParcels : MonoBehaviour
         }
     }
 
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "ParcelSnap1")
+        {
+            Debug.Log("the drag item has left drop place 1");
+            inCorrectPlace1 = false;
+        }
+        if (other.gameObject.name == "ParcelSnap2")
+        {
+            Debug.Log("the drag item has left drop place 2");
+            inCorrectPlace2 = false;
+        }
+        if (other.gameObject.name == "ParcelSnap3")
+        {
+            Debug.Log("the drag item has left drop place 3");
+            inCorrectPlace3 = false;
+        }
+        if (other.gameObject.name == "ParcelSnap4")
+        {
+            Debug.Log("the drag item has left drop place 4");
+            inCorrectPlace4 = false;
+        }
+        if (other.gameObject.name == "ParcelSnap5")
+        {
+            Debug.Log("the drag item has left drop place 5");
+            inCorrectPlace5 = false;
+        }
+    }
+
 
 
     void OnMouseUp()
