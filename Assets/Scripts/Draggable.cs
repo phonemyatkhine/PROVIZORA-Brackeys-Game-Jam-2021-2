@@ -6,7 +6,7 @@ public class Draggable : MonoBehaviour
 {
 
 
-
+    FlagArray flagArray;
     private Vector3 screenPoint;
     private Vector3 startPosition;
     public GameObject LetterSnap1;
@@ -34,7 +34,7 @@ public class Draggable : MonoBehaviour
         LetterSnap3Pos = LetterSnap3.GetComponent<Transform>().position;
         LetterSnap4Pos = LetterSnap4.GetComponent<Transform>().position;
         LetterSnap5Pos = LetterSnap5.GetComponent<Transform>().position;
-
+       
 
 
     }
@@ -44,7 +44,7 @@ public class Draggable : MonoBehaviour
 
         startPosition = this.gameObject.transform.position;
         screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-
+        flagArray.SpawnNewFlag();
 
 
     }
