@@ -5,10 +5,9 @@ using UnityEngine;
 public class Draggable : MonoBehaviour
 {
 
-    public GameObject[] flagArray;
+    
     private Vector3 screenPoint;
     private Vector3 startPosition;
-    public Vector3 flagPos;
     public GameObject LetterSnap1;
     public GameObject LetterSnap2;
     public GameObject LetterSnap3;
@@ -30,8 +29,7 @@ public class Draggable : MonoBehaviour
 
     void Start()
     {
-        rand = Random.Range(0, flagArray.Length);
-        flagPos.Set(flagTrans.position.x, flagTrans.position.y, 0);
+    
         LetterSnap1Pos = LetterSnap1.GetComponent<Transform>().position;
         LetterSnap2Pos = LetterSnap2.GetComponent<Transform>().position;
         LetterSnap3Pos = LetterSnap3.GetComponent<Transform>().position;
@@ -47,8 +45,7 @@ public class Draggable : MonoBehaviour
 
         startPosition = this.gameObject.transform.position;
         screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-        Instantiate(flagArray[rand], flagPos, Quaternion.identity);
-
+       
 
     }
     void OnMouseDrag()
