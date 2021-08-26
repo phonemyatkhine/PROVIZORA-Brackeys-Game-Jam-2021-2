@@ -8,7 +8,7 @@ public class LayerLetter : MonoBehaviour
     void Start()
     {
         gameObject.layer = LayerMask.NameToLayer("Letter");
-        Debug.Log(LayerMask.LayerToName(gameObject.layer));
+       
     }
 
     // Update is called once per frame

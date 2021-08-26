@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class SnapController : MonoBehaviour
 {
-
+/*
     public List<Transform> snapPoints;
     public List<Draggable> draggableObjects;
-    public LayerMask draggable_layer;
     public float snapRange = 0.5f;
 
 
@@ -20,7 +19,7 @@ public class SnapController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    
     private void OnDragEnded(Draggable draggable)
     {
 
@@ -43,4 +42,5 @@ public class SnapController : MonoBehaviour
         }
 
     }
+*/
 }
