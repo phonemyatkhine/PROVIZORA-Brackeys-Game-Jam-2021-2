@@ -5,10 +5,10 @@ using UnityEngine;
 public class Draggable : MonoBehaviour
 {
 
-
-    FlagArray flagArray;
+    public GameObject[] flagArray;
     private Vector3 screenPoint;
     private Vector3 startPosition;
+    public Vector3 flagPos;
     public GameObject LetterSnap1;
     public GameObject LetterSnap2;
     public GameObject LetterSnap3;
@@ -24,17 +24,20 @@ public class Draggable : MonoBehaviour
     private bool inCorrectPlace3 = false;
     private bool inCorrectPlace4 = false;
     private bool inCorrectPlace5 = false;
+    private int rand;
+    
 
 
     void Start()
     {
-
+        rand = Random.Range(0, flagArray.Length);
+        flagPos.Set(flagTrans.position.x, flagTrans.position.y, 0);
         LetterSnap1Pos = LetterSnap1.GetComponent<Transform>().position;
         LetterSnap2Pos = LetterSnap2.GetComponent<Transform>().position;
         LetterSnap3Pos = LetterSnap3.GetComponent<Transform>().position;
         LetterSnap4Pos = LetterSnap4.GetComponent<Transform>().position;
         LetterSnap5Pos = LetterSnap5.GetComponent<Transform>().position;
-       
+        
 
 
     }
@@ -44,20 +47,17 @@ public class Draggable : MonoBehaviour
 
         startPosition = this.gameObject.transform.position;
         screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-        flagArray.SpawnNewFlag();
+        Instantiate(flagArray[rand], flagPos, Quaternion.identity);
 
 
     }
     void OnMouseDrag()
     {
 
-        
         Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint);
         this.transform.position = curPosition;
-        
-
-
+     
     }
 
     void OnTriggerEnter2D(Collider2D other)

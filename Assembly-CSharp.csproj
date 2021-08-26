@@ -47,13 +47,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\FlagArray.cs" />
      <Compile Include="Assets\Scripts\DisplayText.cs" />
      <Compile Include="Assets\Scripts\SpawnScripts\SpawnControllerScript.cs" />
      <Compile Include="Assets\Scripts\Draggable.cs" />
      <Compile Include="Assets\Scripts\SpawnScripts\LetterSpawnScript.cs" />
      <Compile Include="Assets\Scripts\SpawnScripts\ParcelSpawnScript.cs" />
      <Compile Include="Assets\Scripts\TimerScript.cs" />
-     <Compile Include="Assets\Scripts\SnapController.cs" />
      <Compile Include="Assets\Scripts\DraggableParcels.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Editor/2020.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

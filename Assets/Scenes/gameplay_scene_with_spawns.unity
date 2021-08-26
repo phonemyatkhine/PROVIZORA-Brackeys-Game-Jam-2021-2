@@ -2415,17 +2415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789d468a25c324046a443d8582520f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flagArray:
-  - {fileID: 7193521892825794362, guid: 2dd23c3e00a170340bd1b279218edfd2, type: 3}
-  - {fileID: 8788615682212888329, guid: b8c56ecb6a73f39419ce57d890e607a9, type: 3}
-  - {fileID: 2352987821505673744, guid: c3e65a7f539da824c9180738307fb2c1, type: 3}
-  - {fileID: 9033531866175867027, guid: 424a22c9a2f440940acf601ee0e3f5cd, type: 3}
-  - {fileID: 3728486605887295205, guid: d12b91800673ad24bb79dee87155a04a, type: 3}
-  - {fileID: 6754087007308320907, guid: e0f634c67ae154d4e80bf9472a3b7c33, type: 3}
-  - {fileID: 394857547512899919, guid: dc45a7429fc2e04429c912c953f6f8f6, type: 3}
-  - {fileID: 3909231487972687767, guid: 6dcea0594a25e654ea0dc67286798e83, type: 3}
-  - {fileID: 5197341705212012464, guid: 4a481983f143ce547ab0157bb1bd91d1, type: 3}
-  - {fileID: 1377268930141688421, guid: 0d37bc5fe3e20644688f36449497f9fc, type: 3}
+  flagArray: []
   flagPos: {x: 0, y: 0, z: 0}
   flagTrans: {fileID: 1001009939}
 --- !u!4 &1001009939
