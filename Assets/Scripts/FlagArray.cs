@@ -19,6 +19,8 @@ public class FlagArray : MonoBehaviour
     public GameObject[] europe_flags;
     public GameObject[] oceania_flags;
 
+    private GameObject flag;
+
     private int[] country_limits = {5,8,10};
     private int rand;
     public Transform flag_display;
@@ -81,7 +83,6 @@ public class FlagArray : MonoBehaviour
     }
 
     public GameObject spawnNewFlag(int flag_position, string flag_continent){
-        GameObject flag = new GameObject();
         switch (flag_continent)
         {
             case "africa":

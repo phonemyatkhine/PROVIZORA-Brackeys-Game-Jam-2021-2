@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7126765334106711614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14745319, y: -0.47307023, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -146,17 +146,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParcelSnap:
-  - {fileID: 6857615685065097136, guid: 502fbb04d3e90e243b78a8c5c3980540, type: 3}
-  - {fileID: 2841239272763080352, guid: 0105137c41612bb4abc6bccc81624c6d, type: 3}
-  - {fileID: 155256025499362651, guid: 474832e2d6f28c846a6f41560a8ce081, type: 3}
-  - {fileID: 7635836577648022134, guid: 0da0ba541888aff41a1d355cf4defa8e, type: 3}
-  - {fileID: 8569560840457079190, guid: 8c608725b474c84469951eca2cad366e, type: 3}
-  ParcelSnapPos:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  - {fileID: 6489530821033042032, guid: 502fbb04d3e90e243b78a8c5c3980540, type: 3}
+  - {fileID: 7141698001013913260, guid: 0105137c41612bb4abc6bccc81624c6d, type: 3}
+  - {fileID: 5475535188972281959, guid: 474832e2d6f28c846a6f41560a8ce081, type: 3}
+  - {fileID: 3083843040039842862, guid: 0da0ba541888aff41a1d355cf4defa8e, type: 3}
+  - {fileID: 2177019785107529353, guid: 8c608725b474c84469951eca2cad366e, type: 3}
   Parcel_property: {fileID: 2420087729104657113}
   flag_array: {fileID: 6729779939030915123, guid: f0a7b57fead01fa49b4a64b865656478, type: 3}
   flag: {fileID: 0}

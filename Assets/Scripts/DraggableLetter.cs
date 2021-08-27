@@ -27,7 +27,6 @@ public class DraggableLetter : MonoBehaviour
 
     void Start()
     {
-        GameObject flag = new GameObject();
         for (int i = 0; i < LetterSnapPos.Length; i++)
         {
             LetterSnapPos[i] = LetterSnap[i].GetComponent<Transform>().position;
@@ -102,7 +101,6 @@ public class DraggableLetter : MonoBehaviour
         for (int i = 0; i < LetterSnapPos.Length; i++)
         {
             if(inCorrectPlace[i] == true) {
-                LetterSnapPos[i].y -=0.3f;
                 this.gameObject.transform.position = LetterSnapPos[i];
             }
         }

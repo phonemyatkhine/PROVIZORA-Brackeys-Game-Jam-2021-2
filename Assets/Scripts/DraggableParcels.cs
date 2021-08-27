@@ -27,7 +27,6 @@ public class DraggableParcels : MonoBehaviour
 
     void Start()
     {
-        GameObject flag = new GameObject();
         for (int i = 0; i < ParcelSnapPos.Length; i++)
         {
             ParcelSnapPos[i] = ParcelSnap[i].GetComponent<Transform>().position;
