@@ -24,7 +24,7 @@ public class DraggableParcels : MonoBehaviour
     private bool inCorrectPlace3 = false;
     private bool inCorrectPlace4 = false;
     private bool inCorrectPlace5 = false;
-
+    private SoundHandler sh;
 
     void Start()
     {
@@ -34,7 +34,7 @@ public class DraggableParcels : MonoBehaviour
         ParcelSnap3Pos = ParcelSnap3.GetComponent<Transform>().position;
         ParcelSnap4Pos = ParcelSnap4.GetComponent<Transform>().position;
         ParcelSnap5Pos = ParcelSnap5.GetComponent<Transform>().position;
-
+        sh = GetComponent<SoundHandler>();
 
 
     }
@@ -126,25 +126,30 @@ public class DraggableParcels : MonoBehaviour
         if (inCorrectPlace1 == true)
         {
             this.gameObject.transform.position = ParcelSnap1Pos;
+            sh.Playpop();
         }
 
         if (inCorrectPlace2 == true)
         {
             this.gameObject.transform.position = ParcelSnap2Pos;
+            sh.Playpop();
         }
         if (inCorrectPlace3 == true)
         {
             this.gameObject.transform.position = ParcelSnap3Pos;
+            sh.Playpop();
         }
         if (inCorrectPlace4 == true)
         {
             this.gameObject.transform.position = ParcelSnap4Pos;
+            sh.Playpop();
         }
         if (inCorrectPlace5 == true)
         {
             this.gameObject.transform.position = ParcelSnap5Pos;
+            sh.Playpop();
         }
-
+        
 
     }
 
