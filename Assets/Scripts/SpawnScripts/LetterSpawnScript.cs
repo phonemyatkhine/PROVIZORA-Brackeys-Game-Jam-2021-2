@@ -32,7 +32,6 @@ public class LetterSpawnScript : MonoBehaviour
 
     public void spawnLetters(bool spawn_allowed, int number) 
     {
-        Debug.Log(number);
         if(spawn_allowed) {
             for (int i = 0; i < number; i++)
             {

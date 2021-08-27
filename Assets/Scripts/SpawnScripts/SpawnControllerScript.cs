@@ -59,7 +59,6 @@ public class SpawnControllerScript : MonoBehaviour
     }
 
     IEnumerator spawnLetter() {
-        Debug.Log("SPAWNIN LETTER");
         yield return new WaitForSeconds(letter_spawn_rate);
         letter_spawn_script.spawnLetters(spawn_allowed, number_of_items);
         StartCoroutine(spawnLetter());

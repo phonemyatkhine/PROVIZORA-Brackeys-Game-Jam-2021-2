@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -4780457709374564433}
   - component: {fileID: -4937799513294773990}
   - component: {fileID: 8479239597711321304}
+  - component: {fileID: 2420087729104657113}
   m_Layer: 7
   m_Name: Parcel_1 1
   m_TagString: Untagged
@@ -144,8 +145,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 012f33679b9febd47ab7796f0320d1e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ParcelSnap1: {fileID: 1771597986194308391, guid: 0e69164ceaafc4c46856d687e116faf0, type: 3}
-  ParcelSnap2: {fileID: 1771597986194308391, guid: 55e86d181bca42642b607997b1d4b861, type: 3}
-  ParcelSnap3: {fileID: 1771597986194308391, guid: bd2e3438778e0b049b2d5d144d7af4de, type: 3}
-  ParcelSnap4: {fileID: 1771597986194308391, guid: 8d5d1d82103d32b4a8e578bff96ccbd9, type: 3}
-  ParcelSnap5: {fileID: 1771597986194308391, guid: 502fbb04d3e90e243b78a8c5c3980540, type: 3}
+  ParcelSnap:
+  - {fileID: 6857615685065097136, guid: 502fbb04d3e90e243b78a8c5c3980540, type: 3}
+  - {fileID: 2841239272763080352, guid: 0105137c41612bb4abc6bccc81624c6d, type: 3}
+  - {fileID: 155256025499362651, guid: 474832e2d6f28c846a6f41560a8ce081, type: 3}
+  - {fileID: 7635836577648022134, guid: 0da0ba541888aff41a1d355cf4defa8e, type: 3}
+  - {fileID: 8569560840457079190, guid: 8c608725b474c84469951eca2cad366e, type: 3}
+  ParcelSnapPos:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  Parcel_property: {fileID: 2420087729104657113}
+  flag_array: {fileID: 6729779939030915123, guid: f0a7b57fead01fa49b4a64b865656478, type: 3}
+  flag: {fileID: 0}
+--- !u!114 &2420087729104657113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126765334106711614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81db6c17e676fe49bdedd47f0fbb4b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlagDisplay: {fileID: 6729779939030915120, guid: f0a7b57fead01fa49b4a64b865656478, type: 3}
+  flag_array: {fileID: 6729779939030915123, guid: f0a7b57fead01fa49b4a64b865656478, type: 3}
+  GameMaster: {fileID: 3467660944492650982, guid: d27e4b181ba89a146ab77e370aa73eb3, type: 3}
+  game_master: {fileID: 3467660944492650983, guid: d27e4b181ba89a146ab77e370aa73eb3, type: 3}
+  flag_continent: 
+  flag_country: 
+  flag_country_position: 0
