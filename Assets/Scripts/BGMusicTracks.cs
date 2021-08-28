@@ -15,7 +15,7 @@ public class BGMusicTracks : MonoBehaviour
     public int trackSelector;
 
     public GameObject gameOverScreenTime;
-    public GameObject spawnControl;
+   
 
 
     // Start is called before the first frame update
@@ -52,7 +52,7 @@ public class BGMusicTracks : MonoBehaviour
         if (trackSelector == 3 && Track3.isPlaying == false)
         {
             gameOverScreenTime.SetActive(true);
-            spawnControl.SetActive(false);
+           
 
         }
 

@@ -13,7 +13,7 @@ public class ScoreKeeper : MonoBehaviour
     private static int mistake = 0;
     private float wait_to_clean;
     public GameObject gameOverScreen;
-    public GameObject spawnControl;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -70,7 +70,6 @@ public class ScoreKeeper : MonoBehaviour
         if(mistake == 25) {
 
             gameOverScreen.SetActive(true);
-            spawnControl.SetActive(false);
             return true;
         }
         return false;

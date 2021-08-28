@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
@@ -10,9 +11,15 @@ public class GameMaster : MonoBehaviour
     private string current_game_mode;
     public ScoreKeeper score_keeper;
     public bool game_over;
+    public GameObject gameOverScreen;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        
+
+
     }
 
     // Update is called once per frame
@@ -40,6 +47,13 @@ public class GameMaster : MonoBehaviour
 
     public string setGameMode(string mode) {
         return current_game_mode = mode;
+    }
+
+    public void restartScene()
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+
     }
 
 }
