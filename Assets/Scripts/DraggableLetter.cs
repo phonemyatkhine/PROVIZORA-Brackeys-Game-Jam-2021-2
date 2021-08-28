@@ -28,6 +28,7 @@ public class DraggableLetter : MonoBehaviour
 
     
     private string[] continents = {"africa","americas","asia","europe","oceania"};
+    private SoundHandler sh;
 
     void Start()
     {
@@ -35,6 +36,7 @@ public class DraggableLetter : MonoBehaviour
         {
             LetterSnapPos[i] = LetterSnap[i].GetComponent<Transform>().position;
         }
+        sh = GetComponent<SoundHandler>();
     }
 
     void OnMouseDown()
@@ -112,6 +114,7 @@ public class DraggableLetter : MonoBehaviour
                 }
                 this.gameObject.transform.position = LetterSnapPos[i];
                 this.enabled = false;
+                sh.Playpop();
             }
         }
     }

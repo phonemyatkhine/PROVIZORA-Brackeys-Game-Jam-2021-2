@@ -26,6 +26,7 @@ public class DraggableParcels : MonoBehaviour
     public ScoreKeeper score_keeper;
     public GameObject flag;
     private string[] continents = {"africa","americas","asia","europe","oceania"};
+    private SoundHandler sh;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class DraggableParcels : MonoBehaviour
         {
             ParcelSnapPos[i] = ParcelSnap[i].GetComponent<Transform>().position;
         }
+        sh = GetComponent<SoundHandler>();
     }
 
     void OnMouseDown()
@@ -108,6 +110,7 @@ public class DraggableParcels : MonoBehaviour
                 }
                 this.gameObject.transform.position = ParcelSnapPos[i];
                 this.enabled = false;
+                sh.Playpop();
             }
         }
     }
