@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: -4780457709374564433}
   - component: {fileID: -4937799513294773990}
   - component: {fileID: 8479239597711321304}
-  - component: {fileID: 4442809071376810701}
-  - component: {fileID: -8737076698725312835}
+  - component: {fileID: 5781220457967444884}
+  - component: {fileID: -869190468563265078}
   m_Layer: 7
   m_Name: Parcel_1 1
   m_TagString: Untagged
@@ -151,7 +151,19 @@ MonoBehaviour:
   ParcelSnap3: {fileID: 1771597986194308391, guid: bd2e3438778e0b049b2d5d144d7af4de, type: 3}
   ParcelSnap4: {fileID: 1771597986194308391, guid: 8d5d1d82103d32b4a8e578bff96ccbd9, type: 3}
   ParcelSnap5: {fileID: 1771597986194308391, guid: 502fbb04d3e90e243b78a8c5c3980540, type: 3}
---- !u!82 &4442809071376810701
+--- !u!114 &5781220457967444884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126765334106711614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c209844871004741b81f4944c6c06ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &-869190468563265078
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -247,15 +259,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-8737076698725312835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7126765334106711614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c209844871004741b81f4944c6c06ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

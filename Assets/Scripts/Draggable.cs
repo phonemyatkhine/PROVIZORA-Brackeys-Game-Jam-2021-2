@@ -24,7 +24,7 @@ public class Draggable : MonoBehaviour
     private bool inCorrectPlace4 = false;
     private bool inCorrectPlace5 = false;
     private int rand;
-    private SoundHandlerLetters sh;
+    private SoundHandler sh;
 
 
     void Start()
@@ -35,7 +35,7 @@ public class Draggable : MonoBehaviour
         LetterSnap3Pos = LetterSnap3.GetComponent<Transform>().position;
         LetterSnap4Pos = LetterSnap4.GetComponent<Transform>().position;
         LetterSnap5Pos = LetterSnap5.GetComponent<Transform>().position;
-        sh = GetComponent<SoundHandlerLetters>();
+        sh = GetComponent<SoundHandler>();
 
 
     }
@@ -124,28 +124,28 @@ public class Draggable : MonoBehaviour
         if (inCorrectPlace1 == true)
         {
             this.gameObject.transform.position = LetterSnap1Pos;
-            sh.Playpop2();
+            sh.Playpop();
         }
 
         if (inCorrectPlace2 == true)
         {
             this.gameObject.transform.position = LetterSnap2Pos;
-            sh.Playpop2();
+            sh.Playpop();
         }
         if (inCorrectPlace3 == true)
         {
             this.gameObject.transform.position = LetterSnap3Pos;
-            sh.Playpop2();
+            sh.Playpop();
         }
         if (inCorrectPlace4 == true)
         {
             this.gameObject.transform.position = LetterSnap4Pos;
-            sh.Playpop2();
+            sh.Playpop();
         }
         if (inCorrectPlace5 == true)
         {
             this.gameObject.transform.position = LetterSnap5Pos;
-            sh.Playpop2();
+            sh.Playpop();
         }
         
 
