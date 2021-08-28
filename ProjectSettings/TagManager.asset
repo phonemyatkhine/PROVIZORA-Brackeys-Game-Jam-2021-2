@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Draggable
   - Water
   - UI
-  - 
-  - 
+  - Letter
+  - Parcel
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 1880758237
+    locked: 0
+  - name: New Layer
+    uniqueID: 2282276685
+    locked: 0
+  - name: New Layer
+    uniqueID: 2108357615
+    locked: 0
+  - name: New Layer
+    uniqueID: 1720145053
     locked: 0
