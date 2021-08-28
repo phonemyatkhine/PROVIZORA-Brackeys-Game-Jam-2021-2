@@ -5,10 +5,11 @@ using UnityEngine;
 public class ParcelSpawnScript : MonoBehaviour
 {
     public Transform[] parcel_spawn_points;
-    public GameObject parcel;
+    public GameObject[] parcel;
     private int random_spawn_point;
     private float random_coordinates_x;
     private float random_coordinates_y;
+    private int rand_parcel;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +39,8 @@ public class ParcelSpawnScript : MonoBehaviour
                 random_spawn_point = Random.Range(0, parcel_spawn_points.Length);
                 random_coordinates_x = Random.Range(-0.25f, 0.25f);
                 random_coordinates_y = Random.Range(-0.25f, 0.25f);
-                GameObject parcels = Instantiate(parcel, parcel_spawn_points[random_spawn_point].position + new Vector3(random_coordinates_x,random_coordinates_y,0), Quaternion.identity);
+                rand_parcel = Random.Range(0, parcel.Length);
+                GameObject parcels = Instantiate(parcel[rand_parcel], parcel_spawn_points[random_spawn_point].position + new Vector3(random_coordinates_x,random_coordinates_y,0), Quaternion.identity);
                 // letter.GetComponent<Rigidbody>().velocity = new Vector2(-10f, 0f);
             }
         }

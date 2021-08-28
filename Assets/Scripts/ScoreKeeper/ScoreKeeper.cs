@@ -38,8 +38,8 @@ public class ScoreKeeper : MonoBehaviour
             score += incoming_score +50;
             showCombo(score_streak);
             score_streak ++;            
-        } else if (score_streak <= 10) {
-            score += incoming_score +50;
+        } else if (score_streak >= 10) {
+            score += incoming_score +100;
             showCombo(score_streak);
             score_streak ++;
         }
