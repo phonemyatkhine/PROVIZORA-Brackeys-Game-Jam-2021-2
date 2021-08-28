@@ -53,7 +53,7 @@ public class FlagArray : MonoBehaviour
             }
             i++;
         }
-        rand = Random.Range(0, country_limit -1);
+        rand = Random.Range(0, country_limit-1);
         return rand;
     }
 
@@ -86,15 +86,15 @@ public class FlagArray : MonoBehaviour
         switch (flag_continent)
         {
             case "africa":
-                return flag = Instantiate(africa_flags[rand], flag_display.position, Quaternion.identity);
+                return flag = Instantiate(africa_flags[flag_position], flag_display.position, Quaternion.identity);
             case "americas" :
-                return flag =Instantiate(americas_flags[rand], flag_display.position, Quaternion.identity);
+                return flag =Instantiate(americas_flags[flag_position], flag_display.position, Quaternion.identity);
             case "asia" :
-                return flag = Instantiate(asia_flags[rand], flag_display.position, Quaternion.identity);
+                return flag = Instantiate(asia_flags[flag_position], flag_display.position, Quaternion.identity);
             case "europe" :
-                return flag = Instantiate(europe_flags[rand], flag_display.position, Quaternion.identity);
+                return flag = Instantiate(europe_flags[flag_position], flag_display.position, Quaternion.identity);
             case "oceania" :
-                return flag = Instantiate(oceania_flags[rand], flag_display.position, Quaternion.identity);
+                return flag = Instantiate(oceania_flags[flag_position], flag_display.position, Quaternion.identity);
             default:
                 break;
         }

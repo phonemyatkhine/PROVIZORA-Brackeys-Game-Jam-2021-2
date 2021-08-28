@@ -8,6 +8,7 @@ public class TimerScript : MonoBehaviour
     public Text timer_text;
     public float second;
     public int minute;
+    public ScoreKeeper score_keeper;
     // Start is called before the first frame update
     void Start()
     {

@@ -23,7 +23,9 @@ public class DraggableParcels : MonoBehaviour
     }; 
     public PropertyScript Parcel_property;
     public FlagArray flag_array;
+    public ScoreKeeper score_keeper;
     public GameObject flag;
+    private string[] continents = {"africa","americas","asia","europe","oceania"};
 
     void Start()
     {
@@ -99,7 +101,13 @@ public class DraggableParcels : MonoBehaviour
         for (int i = 0; i < ParcelSnapPos.Length; i++)
         {
             if(inCorrectPlace[i] == true) {
+                if(Parcel_property.flag_continent == continents[i]) {
+                    score_keeper.addScore(35);
+                } else {
+                    score_keeper.error();
+                }
                 this.gameObject.transform.position = ParcelSnapPos[i];
+                this.enabled = false;
             }
         }
     }

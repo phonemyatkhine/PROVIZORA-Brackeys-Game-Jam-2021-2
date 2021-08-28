@@ -40,7 +40,7 @@ public class PropertyScript : MonoBehaviour
         GameObject GameMaster = GameObject.Find("GameMaster");
         game_master = GameMaster.GetComponent<GameMaster>();
         //get current game_mode//
-        flag_country_position = flag_array.getCountryPosition(flag_continent);
+        flag_country_position = flag_array.getCountryPosition(game_master.getGameMode());
         flag_country = flag_array.getCountry(flag_continent, flag_country_position);
     }
 }

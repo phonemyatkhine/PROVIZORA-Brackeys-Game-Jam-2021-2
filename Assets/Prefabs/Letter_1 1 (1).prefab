@@ -151,14 +151,10 @@ MonoBehaviour:
   - {fileID: 3802624727512163086, guid: 8efc52af76f002d4596ed8d4d5fb165e, type: 3}
   - {fileID: 8039752038006491201, guid: 42c29051ab01f784091e68492eb02078, type: 3}
   - {fileID: 6335137722409933412, guid: 609c7d025db211f409ea8392458889a9, type: 3}
-  LetterSnapPos:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
   letter_property: {fileID: 7035989700820041151}
+  score_keeper: {fileID: 3185949504970988327, guid: d27e4b181ba89a146ab77e370aa73eb3, type: 3}
   flag_array: {fileID: 6729779939030915123, guid: f0a7b57fead01fa49b4a64b865656478, type: 3}
+  flag: {fileID: 0}
 --- !u!114 &7035989700820041151
 MonoBehaviour:
   m_ObjectHideFlags: 0

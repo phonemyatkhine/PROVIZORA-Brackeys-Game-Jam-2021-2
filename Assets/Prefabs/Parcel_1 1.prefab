@@ -153,6 +153,7 @@ MonoBehaviour:
   - {fileID: 2177019785107529353, guid: 8c608725b474c84469951eca2cad366e, type: 3}
   Parcel_property: {fileID: 2420087729104657113}
   flag_array: {fileID: 6729779939030915123, guid: f0a7b57fead01fa49b4a64b865656478, type: 3}
+  score_keeper: {fileID: 3185949504970988327, guid: d27e4b181ba89a146ab77e370aa73eb3, type: 3}
   flag: {fileID: 0}
 --- !u!114 &2420087729104657113
 MonoBehaviour:

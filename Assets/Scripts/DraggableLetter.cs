@@ -15,15 +15,19 @@ public class DraggableLetter : MonoBehaviour
         new Vector3(),
     };
     private bool[] inCorrectPlace = {
-        false, 
+        false,
         false,
         false,
         false,
         false
     }; 
     public PropertyScript letter_property;
+    public ScoreKeeper score_keeper;
     public FlagArray flag_array;
     public GameObject flag;
+
+    
+    private string[] continents = {"africa","americas","asia","europe","oceania"};
 
     void Start()
     {
@@ -101,7 +105,13 @@ public class DraggableLetter : MonoBehaviour
         for (int i = 0; i < LetterSnapPos.Length; i++)
         {
             if(inCorrectPlace[i] == true) {
+                if(letter_property.flag_continent == continents[i]) {
+                    score_keeper.addScore(25);
+                } else {
+                    score_keeper.error();
+                }
                 this.gameObject.transform.position = LetterSnapPos[i];
+                this.enabled = false;
             }
         }
     }

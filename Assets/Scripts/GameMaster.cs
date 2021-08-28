@@ -8,16 +8,19 @@ public class GameMaster : MonoBehaviour
     private int minute;
     private string[] game_modes = {"Easy","Moderate","Hard","GameOver"};
     private string current_game_mode;
+    public ScoreKeeper score_keeper;
+    public bool game_over;
     // Start is called before the first frame update
     void Start()
     {
-      
     }
 
     // Update is called once per frame
     void Update()
     {
         current_game_mode = getGameMode();
+        game_over = score_keeper.gameOver();
+        Debug.Log(game_over);
     }
 
     public string getGameMode() {
@@ -34,4 +37,9 @@ public class GameMaster : MonoBehaviour
         }
         return game_mode = game_modes[3];
     }
+
+    public string setGameMode(string mode) {
+        return current_game_mode = mode;
+    }
+
 }
