@@ -33,6 +33,7 @@ public class GameMaster : MonoBehaviour
         } else if (minute <9) {
             return game_mode = game_modes[2];
         } else if (minute == 9 ){
+            game_over = true;
             return game_mode = game_modes[3];
         }
         return game_mode = game_modes[3];
