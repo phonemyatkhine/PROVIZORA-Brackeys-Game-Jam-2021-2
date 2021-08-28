@@ -4,117 +4,92 @@ using UnityEngine;
 
 public class DraggableParcels : MonoBehaviour
 {
-
-
-
     private Vector3 screenPoint;
     private Vector3 startPosition;
-    public GameObject ParcelSnap1;
-    public GameObject ParcelSnap2;
-    public GameObject ParcelSnap3;
-    public GameObject ParcelSnap4;
-    public GameObject ParcelSnap5;
-    private Vector3 ParcelSnap1Pos;
-    private Vector3 ParcelSnap2Pos;
-    private Vector3 ParcelSnap3Pos;
-    private Vector3 ParcelSnap4Pos;
-    private Vector3 ParcelSnap5Pos;
-    private bool inCorrectPlace1 = false;
-    private bool inCorrectPlace2 = false;
-    private bool inCorrectPlace3 = false;
-    private bool inCorrectPlace4 = false;
-    private bool inCorrectPlace5 = false;
-    private SoundHandler sh;
+    public GameObject[] ParcelSnap = new GameObject[5];
+    private Vector3[] ParcelSnapPos = new Vector3[] { 
+        new Vector3(),
+        new Vector3(),
+        new Vector3(),
+        new Vector3(),
+        new Vector3(),
+    };
+    private bool[] inCorrectPlace = {
+        false, 
+        false,
+        false,
+        false,
+        false
+    }; 
+    public PropertyScript Parcel_property;
+    public FlagArray flag_array;
+    public ScoreKeeper score_keeper;
+    public GameObject flag;
+    private string[] continents = {"africa","americas","asia","europe","oceania"};
 
     void Start()
     {
-
-        ParcelSnap1Pos = ParcelSnap1.GetComponent<Transform>().position;
-        ParcelSnap2Pos = ParcelSnap2.GetComponent<Transform>().position;
-        ParcelSnap3Pos = ParcelSnap3.GetComponent<Transform>().position;
-        ParcelSnap4Pos = ParcelSnap4.GetComponent<Transform>().position;
-        ParcelSnap5Pos = ParcelSnap5.GetComponent<Transform>().position;
-        sh = GetComponent<SoundHandler>();
-
-
+        for (int i = 0; i < ParcelSnapPos.Length; i++)
+        {
+            ParcelSnapPos[i] = ParcelSnap[i].GetComponent<Transform>().position;
+        }
     }
 
     void OnMouseDown()
     {
-
         startPosition = this.gameObject.transform.position;
         screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-
-
-
+        flag = flag_array.spawnNewFlag(Parcel_property.flag_country_position, Parcel_property.flag_continent);
     }
+
     void OnMouseDrag()
     {
-
-
         Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint);
         this.transform.position = curPosition;
-
-
-
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "ParcelSnap1")
+        switch (other.gameObject.name)
         {
-            Debug.Log("the drag item is inside drop place 1");
-            inCorrectPlace1 = true;
-        }
-        if (other.gameObject.name == "ParcelSnap2")
-        {
-            Debug.Log("the drag item is inside drop place 2");
-            inCorrectPlace2 = true;
-        }
-        if (other.gameObject.name == "ParcelSnap3")
-        {
-            Debug.Log("the drag item is inside drop place 3");
-            inCorrectPlace3 = true;
-        }
-        if (other.gameObject.name == "ParcelSnap4")
-        {
-            Debug.Log("the drag item is inside drop place 4");
-            inCorrectPlace4 = true;
-        }
-        if (other.gameObject.name == "ParcelSnap5")
-        {
-            Debug.Log("the drag item is inside drop place 5");
-            inCorrectPlace5 = true;
+            case "ParcelSnap1" :
+                inCorrectPlace[0] = true;
+                break;
+            case "ParcelSnap2" :
+                inCorrectPlace[1] = true;
+                break;
+            case "ParcelSnap3" :
+                inCorrectPlace[2] = true;
+                break;
+            case "ParcelSnap4" :
+                inCorrectPlace[3] = true;
+                break;
+            case "ParcelSnap5" :
+                inCorrectPlace[4] = true;
+                break;
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.name == "ParcelSnap1")
+    { 
+        switch (other.gameObject.name)
         {
-            Debug.Log("the drag item has left drop place 1");
-            inCorrectPlace1 = false;
-        }
-        if (other.gameObject.name == "ParcelSnap2")
-        {
-            Debug.Log("the drag item has left drop place 2");
-            inCorrectPlace2 = false;
-        }
-        if (other.gameObject.name == "ParcelSnap3")
-        {
-            Debug.Log("the drag item has left drop place 3");
-            inCorrectPlace3 = false;
-        }
-        if (other.gameObject.name == "ParcelSnap4")
-        {
-            Debug.Log("the drag item has left drop place 4");
-            inCorrectPlace4 = false;
-        }
-        if (other.gameObject.name == "ParcelSnap5")
-        {
-            Debug.Log("the drag item has left drop place 5");
-            inCorrectPlace5 = false;
+            case "ParcelSnap1" :
+                inCorrectPlace[0] = false;
+                break;
+            case "ParcelSnap2" :
+                inCorrectPlace[1] = false;
+                break;
+            case "ParcelSnap3" :
+                inCorrectPlace[2] = false;
+                break;
+            case "ParcelSnap4" :
+                inCorrectPlace[3] = false;
+                break;
+            case "ParcelSnap5" :
+                inCorrectPlace[4] = false;
+                break;
         }
     }
 
@@ -122,37 +97,18 @@ public class DraggableParcels : MonoBehaviour
 
     void OnMouseUp()
     {
-
-        if (inCorrectPlace1 == true)
+        Destroy(flag);
+        for (int i = 0; i < ParcelSnapPos.Length; i++)
         {
-            this.gameObject.transform.position = ParcelSnap1Pos;
-            sh.Playpop();
+            if(inCorrectPlace[i] == true) {
+                if(Parcel_property.flag_continent == continents[i]) {
+                    score_keeper.addScore(35);
+                } else {
+                    score_keeper.error();
+                }
+                this.gameObject.transform.position = ParcelSnapPos[i];
+                this.enabled = false;
+            }
         }
-
-        if (inCorrectPlace2 == true)
-        {
-            this.gameObject.transform.position = ParcelSnap2Pos;
-            sh.Playpop();
-        }
-        if (inCorrectPlace3 == true)
-        {
-            this.gameObject.transform.position = ParcelSnap3Pos;
-            sh.Playpop();
-        }
-        if (inCorrectPlace4 == true)
-        {
-            this.gameObject.transform.position = ParcelSnap4Pos;
-            sh.Playpop();
-        }
-        if (inCorrectPlace5 == true)
-        {
-            this.gameObject.transform.position = ParcelSnap5Pos;
-            sh.Playpop();
-        }
-        
-
     }
-
-
-
 }

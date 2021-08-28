@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6729779939030915120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6729779939030915122}
+  - component: {fileID: 6729779939030915123}
+  m_Layer: 0
+  m_Name: FlagDisplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6729779939030915122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729779939030915120}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6, y: 4.18, z: -3.772566}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6729779939030915123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6729779939030915120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 789d468a25c324046a443d8582520f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  africa_flags:
+  - {fileID: 5252203149799640691, guid: 342b6ab5d9bacc849911af90ff153d49, type: 3}
+  - {fileID: 7130078096594540084, guid: f5a2ca874ccab1f4bbdb9d7ec2d2e254, type: 3}
+  - {fileID: 827111033309483610, guid: a9fcf9fa80a240c4e9602260afaf6c5c, type: 3}
+  - {fileID: 553933755598381472, guid: 5320e5acc1b5e5c41b1cbef92b2bc676, type: 3}
+  - {fileID: 404671963170951352, guid: dc3a6eecba7f9b045bd04172d6507db8, type: 3}
+  - {fileID: 456818674318664960, guid: 858d2dfa6daf1ca4c9116bd79554e66f, type: 3}
+  - {fileID: 2340358312605561200, guid: b451e27859319c342ac1f4fbb4bd5f99, type: 3}
+  - {fileID: 5999759189425350918, guid: 984a924e0da0a91449a30946d2783806, type: 3}
+  - {fileID: 207610010032040046, guid: 8eedd6735b5f0e3439c0cc311fe19048, type: 3}
+  - {fileID: 8674566906800983102, guid: 604db4da53e8ec6419d75c899d6b125e, type: 3}
+  americas_flags:
+  - {fileID: 152701581498175506, guid: 0d37bc5fe3e20644688f36449497f9fc, type: 3}
+  - {fileID: 8695459991264974443, guid: c3e65a7f539da824c9180738307fb2c1, type: 3}
+  - {fileID: 8964755124424315394, guid: 6dcea0594a25e654ea0dc67286798e83, type: 3}
+  - {fileID: 6622810884564780080, guid: b8c56ecb6a73f39419ce57d890e607a9, type: 3}
+  - {fileID: 5326234937664752647, guid: 2dd23c3e00a170340bd1b279218edfd2, type: 3}
+  - {fileID: 6948689093351148428, guid: d12b91800673ad24bb79dee87155a04a, type: 3}
+  - {fileID: 8197386812790390086, guid: 424a22c9a2f440940acf601ee0e3f5cd, type: 3}
+  - {fileID: 8839837351290756996, guid: e0f634c67ae154d4e80bf9472a3b7c33, type: 3}
+  - {fileID: 7133807776898499026, guid: 4a481983f143ce547ab0157bb1bd91d1, type: 3}
+  - {fileID: 4455380914311558387, guid: dc45a7429fc2e04429c912c953f6f8f6, type: 3}
+  asia_flags:
+  - {fileID: 9072611544012966348, guid: 8d187ff7b1496d44e80841e79ef2296c, type: 3}
+  - {fileID: 5383328288117067578, guid: e2413706e71a18c458cf541379e5a1cb, type: 3}
+  - {fileID: 6668571148322794930, guid: 8cac90516b78d114280113180837cd2e, type: 3}
+  - {fileID: 430675830023602584, guid: 577d7742e6e146847a29d90da1aa2e46, type: 3}
+  - {fileID: 979231619022817253, guid: 52f458eca266c174f95cce14a37c0f97, type: 3}
+  - {fileID: 3206837902156313860, guid: a3120c1029d90c343be55cd810487ff2, type: 3}
+  - {fileID: 5909734601896822349, guid: 29edba7e3cab5f342bbffa42b446faac, type: 3}
+  - {fileID: 193749817264095956, guid: de304f3e188834d4bb765f2705c00c3a, type: 3}
+  - {fileID: 2064008175389144900, guid: 5197eeaa411750a40bf9755681d50370, type: 3}
+  - {fileID: 2398953493232737042, guid: 97a473265af01ef44ba4e4ce8147fc37, type: 3}
+  europe_flags:
+  - {fileID: 3563740908500833810, guid: dd996e8b3577077408c38aa4bfd7bca1, type: 3}
+  - {fileID: 281521790341659008, guid: 6417bb9291433e446a3fe181a2f8e8eb, type: 3}
+  - {fileID: 1801559426170413198, guid: 69949a67e582c3542b3cf5df8217b84c, type: 3}
+  - {fileID: 6922859898024873211, guid: 9184c299e3dfa8a4e875554facfce09f, type: 3}
+  - {fileID: 1611384234253248697, guid: 7d569cafb2f4e2e418f2deb4415edc2b, type: 3}
+  - {fileID: 1430973266587810925, guid: 6bac40c6331a9d44e83e8c2e9cb8257c, type: 3}
+  - {fileID: 9062938712548125563, guid: 7a3e391e59e730d4f9a1cf2705cc3f11, type: 3}
+  - {fileID: 841459633222541430, guid: 9a79741776d6a8443810939dd356b27c, type: 3}
+  - {fileID: 2933378905903045902, guid: 7d7772b86784ed44d9d73d0d63d22ee1, type: 3}
+  - {fileID: 6141059586694537254, guid: 9c742d05699c99b439e700dc8ee305b4, type: 3}
+  oceania_flags:
+  - {fileID: 457676455617586701, guid: e2c6afa5d852bab44adaaefa52f6487d, type: 3}
+  - {fileID: 5208513707844852672, guid: cc804b228ba867e4e8195afa6c2a28fc, type: 3}
+  - {fileID: 2648036454093050968, guid: 83fe25a1af8184641bcd999b75f8068a, type: 3}
+  - {fileID: 2254789871965336717, guid: 7432b399e38211b4e9cf8b4c060dff56, type: 3}
+  - {fileID: 9066971253827855800, guid: 2e4a0ee0cdb15e5419a970a90d8ce2cb, type: 3}
+  - {fileID: 1724954226660193274, guid: 1480330adcca9c74eb37710e5811d58a, type: 3}
+  - {fileID: 6908825088855938501, guid: 223a1f988b4ae114b895fddc430eadac, type: 3}
+  - {fileID: 4683857601752296134, guid: a11d9cb160f773e44aa47e0d4b54bfc9, type: 3}
+  - {fileID: 6060978059293187439, guid: 22a62719c64f0f044879891d03829a25, type: 3}
+  - {fileID: 1713458645368085284, guid: d324d8915c30d3445af5af36a7ff3233, type: 3}
+  flag_display: {fileID: 6729779939030915122}
